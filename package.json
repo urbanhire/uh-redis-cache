@@ -1,0 +1,47 @@
+{
+  "name": "uh-redis-cache",
+  "version": "1.0.0",
+  "description": "Urbanhire Redis Cache Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanhire/uh-redis-cache.git"
+  },
+  "keywords": [
+    "redis",
+    "cache",
+    "nodejs"
+  ],
+  "author": "Hengki Sihombing <hengki.sihombing@gmail.com> (http://hengkiardo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urbanhire/uh-redis-cache/issues"
+  },
+  "homepage": "https://github.com/urbanhire/uh-redis-cache#readme",
+  "dependencies": {
+    "fast-json-parse": "^1.0.3",
+    "fast-safe-stringify": "^1.2.1",
+    "redis-pool-connection": "^1.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2",
+    "should": "^13.1.3",
+    "standard": "^10.0.3"
+  },
+  "pre-commit": [
+    "standard",
+    "test"
+  ],
+  "standard": {
+    "globals": [],
+    "ignore": [
+      "/test/*.js",
+      "/test/*/*.js",
+      "**/*.opts"
+    ]
+  }
+}
